@@ -1,3 +1,182 @@
 .body {
-  background-color: aqua;
+  font-family: Arial, Helvetica, Avenir Next, Georgia, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  text-underline: none;
+}
+
+
+
+.page-wrapper {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin: 0 auto;
+  width: 1440px;
+  height: 700px;
+  background-image: url("../../assets/images/Cuba_header.png");
+  &__name {
+    margin: 0 auto;
+    padding-top: 237px;
+    width: 527px;
+    height: 227px;
+    font-family: Georgia;
+    font-size: 200px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  &__description {
+    margin: 0 auto;
+    padding-top: 180px;
+    width: 406px;
+    height: 27px;
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+  .page-nav {
+    width: 1440px;
+    height: 45px;
+    margin: 20px 330px 0 330px;
+    display: inline-flex;
+    &__menu {
+      height: 24px;
+      margin: 0 30px 0 30px;
+      font-family: AvenirNext;
+      font-size: 14px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.36;
+      letter-spacing: normal;
+    }
+  }
+
+.page-nav__menu:hover {
+  border-bottom: 4px solid #ecb84c;
+}
+
+.page-content {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  border-top: 2px solid salmon;
+  &__header {
+    margin: 70px auto 40px auto;
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4e5665;
+  }
+  &__info {
+    margin: 30px auto;
+    width: 970px;
+    height: 100%;
+    font-family: AvenirNext;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #505050;
+  }
+
+}
+
+.readmore {
+  color: #ecb84c;
+  font-size: 16px;
+}
+
+.image {
+  margin: 64px 235px 101px 235px;
+  width: 970px;
+  height: 430px;
+  display: inline-flex;
+  &__background-street {
+      width: 470px;
+      height: 289px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      margin: 70px 0 70px 0;
+      margin-right: -70px;
+  }
+  &__background-street:before {
+    width: 33px;
+    height: 33px;
+    background-color: gold;
+  }
+  &__header {
+      width: 220px;
+      margin: 40px 227px 0 40px;
+      font-family: Georgia;
+      font-size: 24px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.04;
+      letter-spacing: normal;
+      color: #4e5665;
+  }
+  &__description {
+      margin: 16px 40px 40px 40px;
+      font-family: AvenirNext;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      color: #505050;
+  }
+  &__street {
+    width: 570px;
+    height: 428px;
+    object-fit: contain;
+    z-index: 1;
+  }
+  &__background-beach {
+    width: 470px;
+    height: 289px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    margin: 70px 0 70px 0;
+    margin-left: -70px;
+  }
+  &__beach img{
+    width: 570px;
+    height: 428px;
+    object-fit: contain;
+    z-index: 1;
+    border-radius: 4px;
+  }
+}
+
+

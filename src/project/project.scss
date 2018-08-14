@@ -160,6 +160,11 @@ a {
   font-size: 16px;
 }
 
+.readmore:hover {
+  color: salmon;
+  transition: 0.4s;
+}
+
 .image {
   margin: 64px 235px 101px 235px;
   width: 970px;
@@ -355,6 +360,7 @@ a {
 .hover-point__bonnet:hover {
   cursor: pointer;
   background-color: salmon;
+  transition: 0.4s;
   .dropdown__bonnet {
     display: block;
   }
@@ -363,6 +369,7 @@ a {
 .hover-point__door:hover {
   cursor: pointer;
   background-color: salmon;
+  transition: 0.4s;
   .dropdown__door {
     display: block;
   }
@@ -371,6 +378,7 @@ a {
 .hover-point__roof:hover {
   cursor: pointer;
   background-color: salmon;
+  transition: 0.4s;
   .dropdown__roof {
     display: block;
   }
@@ -379,6 +387,7 @@ a {
 .hover-point__wheel:hover {
   cursor: pointer;
   background-color: salmon;
+  transition: 0.4s;
   .dropdown__wheel {
     display: block;
   }
@@ -505,7 +514,8 @@ a {
   .footer-content {
     width: 1200px;
     height: 224px;
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-end;
     margin: 0 auto;
     &__rights {
       margin: 0 auto;

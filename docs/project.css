@@ -14,7 +14,7 @@ a {
   margin: 0 auto;
   width: 1440px;
   height: 700px;
-  background-image: url(../assets/images/Cuba_header.png); }
+  background-image: url(assets/images/Cuba_header.png); }
   .page-header__name {
     margin: 0 auto;
     padding-top: 237px;
@@ -150,6 +150,10 @@ a {
 .readmore {
   color: #ecb84c;
   font-size: 16px; }
+
+.readmore:hover {
+  color: salmon;
+  transition: 0.4s; }
 
 .image {
   margin: 64px 235px 101px 235px;
@@ -328,25 +332,29 @@ a {
 
 .hover-point__bonnet:hover {
   cursor: pointer;
-  background-color: salmon; }
+  background-color: salmon;
+  transition: 0.4s; }
   .hover-point__bonnet:hover .dropdown__bonnet {
     display: block; }
 
 .hover-point__door:hover {
   cursor: pointer;
-  background-color: salmon; }
+  background-color: salmon;
+  transition: 0.4s; }
   .hover-point__door:hover .dropdown__door {
     display: block; }
 
 .hover-point__roof:hover {
   cursor: pointer;
-  background-color: salmon; }
+  background-color: salmon;
+  transition: 0.4s; }
   .hover-point__roof:hover .dropdown__roof {
     display: block; }
 
 .hover-point__wheel:hover {
   cursor: pointer;
-  background-color: salmon; }
+  background-color: salmon;
+  transition: 0.4s; }
   .hover-point__wheel:hover .dropdown__wheel {
     display: block; }
 
@@ -439,8 +447,10 @@ a {
 .footer-content {
   width: 1200px;
   height: 224px;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   margin: 0 auto; }
   .footer-content__rights {
     margin: 0 auto; }

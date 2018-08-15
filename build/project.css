@@ -5,8 +5,14 @@ a {
   text-decoration: none;
   text-underline: none; }
 
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 2; }
+
 .page-wrapper {
-  width: 1440px;
+  width: 80%;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto; }
 
@@ -45,6 +51,24 @@ a {
     text-align: center;
     color: #ffffff;
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+  .page-header__border:before {
+    content: "";
+    width: 480px;
+    height: 620px;
+    position: absolute;
+    border-bottom: 2px solid #ecb84c;
+    border-left: 2px solid #ecb84c;
+    border-top: 2px solid #ecb84c;
+    margin: -428px 0 0 30px; }
+  .page-header__border:after {
+    content: "";
+    width: 480px;
+    height: 620px;
+    position: absolute;
+    border-bottom: 2px solid #ecb84c;
+    border-right: 2px solid #ecb84c;
+    border-top: 2px solid #ecb84c;
+    margin: -428px 0 0 930px; }
 
 .page-nav {
   height: 45px;
@@ -159,8 +183,8 @@ a {
   margin: 64px 235px 101px 235px;
   width: 970px;
   height: 430px;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: -ms-flexbox;
+  display: flex; }
   .image__background-street {
     width: 470px;
     height: 289px;
@@ -169,10 +193,6 @@ a {
     z-index: 2;
     margin: 70px 0 70px 0;
     margin-right: -70px; }
-  .image__background-street:before {
-    width: 33px;
-    height: 33px;
-    background-color: gold; }
   .image__header {
     width: 220px;
     margin: 40px 227px 0 40px;
@@ -213,6 +233,24 @@ a {
     object-fit: contain;
     z-index: 1;
     border-radius: 4px; }
+
+.image-background__border:before {
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  border-top: 2px solid #ecb84c;
+  border-left: 2px solid #ecb84c;
+  margin: 19px 0 0 19px; }
+
+.image-background__border:after {
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  border-bottom: 2px solid #ecb84c;
+  border-right: 2px solid #ecb84c;
+  margin: 237px 0 0 416px; }
 
 .car-content {
   width: 1440px;
@@ -332,29 +370,29 @@ a {
 
 .hover-point__bonnet:hover {
   cursor: pointer;
-  background-color: salmon;
-  transition: 0.4s; }
+  opacity: 1;
+  transition: 0.2s; }
   .hover-point__bonnet:hover .dropdown__bonnet {
     display: block; }
 
 .hover-point__door:hover {
   cursor: pointer;
-  background-color: salmon;
-  transition: 0.4s; }
+  opacity: 1;
+  transition: 0.2s; }
   .hover-point__door:hover .dropdown__door {
     display: block; }
 
 .hover-point__roof:hover {
   cursor: pointer;
-  background-color: salmon;
-  transition: 0.4s; }
+  opacity: 1;
+  transition: 0.2s; }
   .hover-point__roof:hover .dropdown__roof {
     display: block; }
 
 .hover-point__wheel:hover {
   cursor: pointer;
-  background-color: salmon;
-  transition: 0.4s; }
+  opacity: 1;
+  transition: 0.2s; }
   .hover-point__wheel:hover .dropdown__wheel {
     display: block; }
 
@@ -362,7 +400,7 @@ a {
   display: none;
   width: 80px;
   height: 28px;
-  margin: -140px 0 0 -170px;
+  margin: -140px 0 0 -190px;
   text-align: center;
   font-size: 20px;
   font-weight: normal;
@@ -373,7 +411,7 @@ a {
   display: none;
   width: 80px;
   height: 28px;
-  margin: -140px 0 0 70px;
+  margin: -140px 0 0 140px;
   text-align: center;
   font-size: 20px;
   font-weight: normal;
@@ -384,8 +422,8 @@ a {
   display: none;
   width: 80px;
   height: 28px;
-  margin: -140px 0 0 75px;
-  text-align: center;
+  margin: -240px 0 0 255px;
+  text-align: left;
   font-size: 20px;
   font-weight: normal;
   font-family: Georgia;
@@ -395,12 +433,72 @@ a {
   display: none;
   width: 180px;
   height: 28px;
-  margin: -125px 0 0 110px;
+  margin: -135px 0 0 140px;
   text-align: center;
   font-size: 20px;
   font-weight: normal;
   font-family: Georgia;
   color: black; }
+
+.bonnet-line {
+  margin: 70px 57.5px auto;
+  width: 170px;
+  height: 1px;
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  background-color: #ecb84c;
+  transition: 0.5s; }
+  .bonnet-line__h {
+    margin: -62px auto 0 -7px;
+    width: 90px;
+    height: 1px;
+    background-color: #ecb84c;
+    transition: 0.5s; }
+
+.door-line {
+  margin: 70px 0 0 -145px;
+  width: 170px;
+  height: 1px;
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background-color: #ecb84c;
+  transition: 0.5s; }
+  .door-line__h {
+    margin: -61px 0 0 0;
+    width: 90px;
+    height: 1px;
+    background-color: #ecb84c;
+    transition: 0.5s; }
+
+.wheel-line {
+  margin: 121px 0 0 -281px;
+  width: 309px;
+  height: 1px;
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background-color: #ecb84c;
+  transition: 0.5s; }
+  .wheel-line__h {
+    margin: -110px auto 0 -17px;
+    width: 90px;
+    height: 1px;
+    background-color: #ecb84c;
+    transition: 0.5s; }
+
+.roof-line {
+  margin: 65px 0 0 -146px;
+  width: 170px;
+  height: 1px;
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  background-color: #ecb84c;
+  transition: 0.5s; }
+  .roof-line__h {
+    margin: -61px auto 0 -1px;
+    width: 190px;
+    height: 1px;
+    background-color: #ecb84c;
+    transition: 0.5s; }
 
 .slider {
   width: 1440px;
@@ -442,15 +540,48 @@ a {
   width: 1440px;
   height: 314px;
   margin: 0 auto;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  border-top: 1px solid #d0d4d8; }
+
+.footer-name {
+  width: 147px;
+  height: 46px;
+  margin: 54px auto 0 120px;
+  font-family: AvenirNext;
+  font-size: 34px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #37c491; }
 
 .footer-content {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 224px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  margin: 0 auto; }
+  margin: 0 0 auto;
+  color: #505050;
+  font-size: 14px;
+  font-family: Avenir Next;
+  font-weight: normal;
+  line-height: 1.5; }
+  .footer-content__info {
+    text-align: left;
+    -ms-flex-align: left;
+        align-items: left; }
   .footer-content__rights {
-    margin: 0 auto; }
+    margin: 50px auto;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    font-family: Avenir Next; }
+  .footer-content .footer-content__info-header {
+    font-size: 15px;
+    font-family: "Avenir Next";
+    color: #4e5665;
+    font-weight: normal; }

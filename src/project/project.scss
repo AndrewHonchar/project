@@ -14,7 +14,7 @@ ul {
 }
 
 .page-wrapper {
-  width: 80%;
+  width: 100%;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
@@ -22,13 +22,15 @@ ul {
 
 .page-header {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   height: 700px;
   background-image: url("../../assets/images/Cuba_header.png");
   &__name {
     margin: 0 auto;
     padding-top: 237px;
-    width: 527px;
+    width: 100%;
+    max-width: 527px;
     height: 227px;
     font-family: Georgia;
     font-size: 200px;
@@ -44,7 +46,8 @@ ul {
   &__description {
     margin: 0 auto;
     padding-top: 180px;
-    width: 406px;
+    width: 100%;
+    max-width: 406px;
     height: 27px;
     font-family: Georgia;
     font-size: 24px;
@@ -57,27 +60,34 @@ ul {
     color: #ffffff;
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
   }
-  &__border:before {
-    content: "";
-    width: 480px;
-    height: 620px;
-    position: absolute;
-    border-bottom: 2px solid #ecb84c;
-    border-left: 2px solid #ecb84c;
-    border-top: 2px solid #ecb84c;
-    margin: -428px 0 0 30px;
-  }
-  &__border:after {
-    content: "";
-    width: 480px;
-    height: 620px;
-    position: absolute;
-    border-bottom: 2px solid #ecb84c;
-    border-right: 2px solid #ecb84c;
-    border-top: 2px solid #ecb84c;
-    margin: -428px 0 0 930px;
-  }
+  //&__border:before {
+  //  content: "";
+  //  width: 480px;
+  //  height: 620px;
+  //  position: absolute;
+  //  border-bottom: 2px solid #ecb84c;
+  //  border-left: 2px solid #ecb84c;
+  //  border-top: 2px solid #ecb84c;
+  //  margin: -428px 0 0 30px;
+  //}
+  //&__border:after {
+  //  content: "";
+  //  width: 480px;
+  //  height: 620px;
+  //  position: absolute;
+  //  border-bottom: 2px solid #ecb84c;
+  //  border-right: 2px solid #ecb84c;
+  //  border-top: 2px solid #ecb84c;
+  //  margin: -428px 0 0 930px;
+  //}
 }
+
+
+.slider {
+  width: 500px;
+  height: 500px;
+}
+
   .page-nav {
     height: 45px;
     margin: 20px auto 0 auto;
@@ -101,7 +111,8 @@ ul {
 }
 
 .page-content {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   border-top: 1px solid #d0d4d8;
@@ -119,7 +130,8 @@ ul {
   }
   &__info {
     margin: 30px auto;
-    width: 970px;
+    width: 100%;
+    max-width: 970px;
     height: 100%;
     font-family: AvenirNext;
     font-size: 16px;
@@ -131,7 +143,8 @@ ul {
     color: #505050;
   }
   &__icon {
-    width: 970px;
+    width: 100%;
+    max-width: 970px;
     height: 250px;
     margin: 0 auto;
     display: flex;
@@ -278,7 +291,8 @@ ul {
 
 
 .car-content {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 680px;
   margin: 0 auto;
   border-bottom: 1px solid #d0d4d8;
@@ -315,13 +329,15 @@ ul {
     color: #ecb84c;
   }
   &__image {
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     height: 330px;
     margin: 80px auto 60px auto;
     box-shadow: 0 7px grey;
   }
   &__description {
-    width: 970px;
+    width: 100%;
+    max-width: 970px;
     height: 112px;
     margin: 30px auto;
     font-family: AvenirNext;
@@ -566,11 +582,13 @@ ul {
 
 
 
-.slider {
-  width: 1440px;
+.slider-wrapper {
+  width: 100%;
+  max-width: 1440px;
   height: 900px;
   margin: 80px auto;
-  &__header {
+}
+  .slider__header {
     width: 215px;
     height: 38px;
     margin: 0 auto;
@@ -584,8 +602,9 @@ ul {
     text-align: center;
     color: #4e5665;
   }
-  &__description {
-    width: 970px;
+  .slider__description {
+    width: 100%;
+    max-width: 970px;
     height: 112px;
     margin: 42px auto;
     font-family: AvenirNext;
@@ -597,14 +616,14 @@ ul {
     letter-spacing: normal;
     color: #505050;
   }
-  &__divider {
+  .slider__divider {
     width: 270px;
     height: 1px;
     margin: 50px auto;
     opacity: 0.5;
     background-color: #d0d4d8;
   }
-}
+
 
 
 
@@ -618,7 +637,8 @@ ul {
 
 
 .footer {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 314px;
   margin: 0 auto;
   background-color: #f8f8f8;
@@ -678,24 +698,111 @@ ul {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//*{
+//  margin: 0;
+//  padding: 0;
+//  border: 0;
+//  font-size: 100%;
+//  font: inherit;
+//  vertical-align: baseline;
+//}
+//
+//body {
+//  line-height: 1;
+//}
+//
+//.wrap {
+//  margin: 10px auto;
+//  width: 100%;
+//  max-width: 700px;
+//}
+//
+//
+//
+///* MAIN STYLES */
+//.b-carousel {
+//  width: 100%;
+//  overflow: hidden;
+//  position: relative;
+//  box-sizing: border-box;
+//}
+//
+//.b-carousel__prev,
+//.b-carousel__next {
+//  position: absolute;
+//  top: 50%;
+//  left: -25px;
+//  width: 50px;
+//  height: 50px;
+//  background: #ecb84c;
+//  transform: translateY(-50%) translateZ(0);
+//  cursor: pointer;
+//  text-indent: 100%;
+//  white-space: nowrap;
+//  overflow: hidden;
+//  z-index: 3;
+//  border-radius: 50%;
+//  color: #fff;
+//}
+//
+//.b-carousel__next {
+//  left: auto;
+//  right: -25px;
+//  color: #fff;
+//}
+//
+//.b-carousel__wrap {
+//  display: flex;
+//  transition: transform .5s;
+//  will-change: transform;
+//  position: relative;
+//  z-index: 1;
+//  height: 100%;
+//}
+//
+//.b-carousel__item {
+//  flex: 0 0 100%;
+//  overflow: hidden;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//}
+//
+//.b-carousel__img {
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//  display: block;
+//}
+//
+//
+//
+//.s-notransition {
+//  transition: 0s;
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//

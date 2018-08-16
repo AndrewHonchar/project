@@ -9053,8 +9053,35 @@ module.exports = __webpack_require__(331);
 
 __webpack_require__(332);
 
+__webpack_require__(333);
+
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide, 2000);
+
+function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
 /***/ }),
 /* 332 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 333 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(334);
+
+/***/ }),
+/* 334 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

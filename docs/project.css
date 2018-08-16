@@ -11,20 +11,22 @@ ul {
   line-height: 2; }
 
 .page-wrapper {
-  width: 80%;
+  width: 100%;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto; }
 
 .page-header {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   height: 700px;
   background-image: url(assets/images/Cuba_header.png); }
   .page-header__name {
     margin: 0 auto;
     padding-top: 237px;
-    width: 527px;
+    width: 100%;
+    max-width: 527px;
     height: 227px;
     font-family: Georgia;
     font-size: 200px;
@@ -39,7 +41,8 @@ ul {
   .page-header__description {
     margin: 0 auto;
     padding-top: 180px;
-    width: 406px;
+    width: 100%;
+    max-width: 406px;
     height: 27px;
     font-family: Georgia;
     font-size: 24px;
@@ -51,24 +54,6 @@ ul {
     text-align: center;
     color: #ffffff;
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
-  .page-header__border:before {
-    content: "";
-    width: 480px;
-    height: 620px;
-    position: absolute;
-    border-bottom: 2px solid #ecb84c;
-    border-left: 2px solid #ecb84c;
-    border-top: 2px solid #ecb84c;
-    margin: -428px 0 0 30px; }
-  .page-header__border:after {
-    content: "";
-    width: 480px;
-    height: 620px;
-    position: absolute;
-    border-bottom: 2px solid #ecb84c;
-    border-right: 2px solid #ecb84c;
-    border-top: 2px solid #ecb84c;
-    margin: -428px 0 0 930px; }
 
 .page-nav {
   height: 45px;
@@ -92,7 +77,8 @@ ul {
   border-bottom: 3px solid #ecb84c; }
 
 .page-content {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   border-top: 1px solid #d0d4d8; }
@@ -109,7 +95,8 @@ ul {
     color: #4e5665; }
   .page-content__info {
     margin: 30px auto;
-    width: 970px;
+    width: 100%;
+    max-width: 970px;
     height: 100%;
     font-family: AvenirNext;
     font-size: 16px;
@@ -120,7 +107,8 @@ ul {
     letter-spacing: normal;
     color: #505050; }
   .page-content__icon {
-    width: 970px;
+    width: 100%;
+    max-width: 970px;
     height: 250px;
     margin: 0 auto;
     display: -ms-flexbox;
@@ -253,7 +241,8 @@ ul {
   margin: 237px 0 0 416px; }
 
 .car-content {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 680px;
   margin: 0 auto;
   border-bottom: 1px solid #d0d4d8; }
@@ -287,12 +276,14 @@ ul {
     letter-spacing: normal;
     color: #ecb84c; }
   .car-content__image {
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     height: 330px;
     margin: 80px auto 60px auto;
     box-shadow: 0 7px grey; }
   .car-content__description {
-    width: 970px;
+    width: 100%;
+    max-width: 970px;
     height: 112px;
     margin: 30px auto;
     font-family: AvenirNext;
@@ -500,53 +491,95 @@ ul {
     background-color: #ecb84c;
     transition: 0.5s; }
 
-.slider {
-  width: 1440px;
+.slider-wrapper {
+  width: 100%;
+  max-width: 1440px;
   height: 900px;
   margin: 80px auto; }
-  .slider__header {
-    width: 215px;
-    height: 38px;
-    margin: 0 auto;
-    font-family: Georgia;
-    font-size: 32px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.19;
-    letter-spacing: normal;
-    text-align: center;
-    color: #4e5665; }
-  .slider__description {
-    width: 970px;
-    height: 112px;
-    margin: 42px auto;
-    font-family: AvenirNext;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.75;
-    letter-spacing: normal;
-    color: #505050; }
-  .slider__divider {
-    width: 270px;
-    height: 1px;
-    margin: 50px auto;
-    opacity: 0.5;
-    background-color: #d0d4d8; }
+
+.slider__header {
+  width: 215px;
+  height: 38px;
+  margin: 0 auto;
+  font-family: Georgia;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4e5665; }
+
+.slider__description {
+  width: 100%;
+  max-width: 970px;
+  height: 112px;
+  margin: 42px auto;
+  font-family: AvenirNext;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #505050; }
+
+.slider__divider {
+  width: 270px;
+  height: 1px;
+  margin: 50px auto;
+  opacity: 0.5;
+  background-color: #d0d4d8; }
+
+.slider {
+  max-width: 700px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+#slides {
+  position: relative;
+  height: 150px;
+  margin: 0 auto;
+  list-style-type: none; }
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  margin: 0 auto;
+  transition: opacity 1s; }
+
+.showing {
+  opacity: 1;
+  z-index: 2; }
 
 .footer {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 314px;
   margin: 0 auto;
   background-color: #f8f8f8;
   border-top: 1px solid #d0d4d8; }
 
+.footer-header {
+  width: 147px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: auto; }
+
 .footer-name {
   width: 147px;
   height: 46px;
-  margin: 54px auto 0 120px;
+  margin: 54px 0 40px 0;
   font-family: AvenirNext;
   font-size: 34px;
   font-weight: 500;
@@ -556,9 +589,20 @@ ul {
   letter-spacing: normal;
   color: #37c491; }
 
+.money-change {
+  width: 140px;
+  height: 30px;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border: solid 1px #d9dde1;
+  text-align: center;
+  font-size: 18px; }
+
 .footer-content {
   width: 100%;
   max-width: 1200px;
+  margin: auto;
   height: 224px;
   display: -ms-flexbox;
   display: flex;
